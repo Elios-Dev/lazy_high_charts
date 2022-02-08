@@ -102,9 +102,9 @@ module LazyHighCharts
                     js_event_function(core_js, 'turbolinks:load')
                   # Hotwire Turbo
                   elsif defined?(Turbo)
-                    js_event_function(core_js, 'turbo:load')
+                    js_event_function(core_js, 'turbo:load>')
                   else
-                    js_event_function(core_js, 'turbo:before-fetch-response')
+                    js_event_function(core_js, 'turbo:before-fetch-response>')
                   end
 
       js_output = "(function() {\n  #{js_output}\n})()"
