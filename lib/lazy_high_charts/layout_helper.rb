@@ -104,7 +104,7 @@ module LazyHighCharts
                   elsif defined?(Turbo)
                     js_event_function(core_js, 'turbo:frame-render')
                   else
-                    js_event_function(core_js, 'turbo:before-fetch-response')
+                    js_event_function(core_js, 'load', 'window')
                   end
 
       js_output = "(function() {\n  #{js_output}\n})()"
